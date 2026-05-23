@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>প্রমাণ নথি: ইব্রাহিম - সশস্ত্র সন্ত্রাস ও হত্যাচেষ্টা</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background: #f4f6f9;
+            color: #1e293b;
+            line-height: 1.5;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        .header {
+            background: #ffffff;
+            padding: 28px 24px 20px;
+            border-bottom: 2px solid #e9edf2;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            color: #b91c1c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 6px 14px;
+            border-radius: 60px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .sub {
+            color: #475569;
+            margin-top: 12px;
+            font-size: 15px;
+        }
+
+        .warning-block {
+            background: #fffbeb;
+            border-left: 5px solid #dc2626;
+            margin: 24px;
+            padding: 18px 22px;
+            border-radius: 14px;
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 32px 24px 16px 24px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 0 24px 24px 24px;
+        }
+
+        .evidence-card {
+            background: #ffffff;
+            border: 1px solid #e9edf2;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.2s;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        .evidence-card img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+            background: #f3f4f6;
+            pointer-events: none;
+        }
+
+        .card-label {
+            padding: 14px 16px;
+            background: #fefefe;
+            border-top: 1px solid #eff3f8;
+            font-weight: 500;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #1f2a44;
+        }
+
+        .contact-row {
+            background: #f8fafc;
+            margin: 24px;
+            padding: 18px 24px;
+            border-radius: 18px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            border: 1px solid #e2edf7;
+        }
+
+        .phone-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: white;
+            padding: 8px 20px;
+            border-radius: 100px;
+            border: 1px solid #cbd5e1;
+        }
+
+        .fb-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #1877f2;
+            color: white;
+            padding: 8px 22px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .fb-link:hover {
+            background: #0e5dc2;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 28px;
+            margin: 0 24px 32px 24px;
+        }
+
+        .video-card {
+            background: #ffffff;
+            border-radius: 20px;
+            border: 1px solid #eef2f6;
+            overflow: hidden;
+        }
+
+        .video-title {
+            background: #fafcff;
+            padding: 12px 16px;
+            font-weight: 600;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 1px solid #ecf3fa;
+        }
+
+        .time-badge {
+            background: #e2e8f0;
+            color: #334155;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 30px;
+            margin-left: auto;
+            font-weight: normal;
+        }
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+            display: block;
+        }
+
+        .short-card iframe {
+            aspect-ratio: 9 / 16;
+            max-height: 520px;
+        }
+
+        .incident-details {
+            background: #fef9e6;
+            margin: 24px;
+            padding: 20px 24px;
+            border-radius: 18px;
+            border: 1px solid #fde68a;
+        }
+
+        .incident-details h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #92400e;
+            margin-bottom: 12px;
+        }
+
+        .incident-details ul {
+            margin-left: 24px;
+            color: #78350f;
+        }
+
+        .incident-details li {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 20px;
+            background: #f9fafb;
+            border-top: 1px solid #eef2f8;
+            font-size: 13px;
+            color: #4a5a72;
+        }
+
+        @media (max-width: 700px) {
+            body { padding: 12px; }
+            .image-grid { gap: 16px; margin: 0 16px 20px 16px; }
+            .video-grid { margin: 0 16px 24px 16px; gap: 20px; }
+            .warning-block, .contact-row, .incident-details { margin: 16px; }
+            .section-title { margin: 24px 16px 12px 16px; }
+            .title { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="title">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L15 8.5L22 9.5L17 14L18.5 21L12 17.5L5.5 21L7 14L2 9.5L9 8.5L12 2Z" fill="#b91c1c" stroke="#b91c1c" stroke-width="1.2"/>
+                <path d="M12 6L13.5 9.5L17.5 10L14.5 12.5L15.5 16.5L12 14L8.5 16.5L9.5 12.5L6.5 10L10.5 9.5L12 6Z" fill="white" stroke="#b91c1c" stroke-width="0.8"/>
+            </svg>
+            <span>প্রমাণ নথি: সশস্ত্র সন্ত্রাস ও হত্যাচেষ্টা</span>
+            <span class="badge">আইনি প্রয়োজনে</span>
+        </div>
+        <div class="sub">অভিযুক্ত: ইব্রাহিম (বাড়ি: অযোধ্যা) | দা দিয়ে হামলা, হত্যার হুমকি, নারী নির্যাতন</div>
+    </div>
+
+    <div class="warning-block">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L1 21H23L12 2Z" stroke="#dc2626" stroke-width="1.5" fill="#fff3e0"/>
+            <path d="M12 9V13M12 17H12.01" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div><strong>জরুরি সতর্কতা:</strong> ইব্রাহিম সশস্ত্র (দা) ও বারবার হামলা, হত্যার হুমকি দিচ্ছে। আজ সকালে সে তার ভাই ও ভাইয়ের পরিবারকে হত্যা করার কসম নিয়েছে। নিম্নের সকল ছবি ও ভিডিও প্রমাণ হিসেবে সংরক্ষণ করুন। তৎক্ষণাৎ স্থানীয় থানা ও ৯৯৯-এ জানান।</div>
+    </div>
+
+    <!-- ঘটনার বিবরণ -->
+    <div class="incident-details">
+        <h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#92400e" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            প্রথম আক্রমণ (ভিডিও ধারণ করা সম্ভব হয়নি)
+        </h3>
+        <ul>
+            <li><strong>প্রথম ঘটনা:</strong> ইব্রাহিম তার <strong>বাবা ও ভাইকে</strong> দা দিয়ে আক্রমণ করে। তখন আমরা দু'জনকে বাঁচানোর চেষ্টা করছিলাম, তাই ভিডিও করা সম্ভব হয়নি।</li>
+            <li><strong>দুপুরের ঘটনায় (৩ মাস আগে):</strong> ইব্রাহিম তার <strong>বোনকেও</strong> মারধর করে।</li>
+            <li><strong>আজ সকালে:</strong> ইব্রাহিম তার <strong>ভাই (বাই) ও ভাইয়ের পুরো পরিবারকে হত্যা করার কসম</strong> নিয়েছে।</li>
+            <li><strong>সকল ভিডিয়োতেই দা সন্ত্রাসের চিত্র রয়েছে।</strong></li>
+        </ul>
+    </div>
+
+    <!-- ছবি সেকশন (সেলফি) -->
+    <div class="section-title">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="4" width="20" height="16" rx="2" stroke="#1f2a44" stroke-width="1.3"/>
+            <circle cx="12" cy="10" r="3" stroke="#1f2a44" stroke-width="1.3"/>
+            <path d="M17 4L19 2M7 4L5 2" stroke="#1f2a44" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+        <span>অভিযুক্তের সেলফি (ফেসবুক প্রোফাইল)</span>
+    </div>
+    <div class="image-grid">
+        <div class="evidence-card">
+            <img src="images/11.jpg" alt="ইব্রাহিম সেলফি 1" oncontextmenu="return false;" ondragstart="return false;">
+            <div class="card-label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="1.3"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                ছবি ১: ইব্রাহিমের সেলফি
+            </div>
+        </div>
+        <div class="evidence-card">
+            <img src="images/22.jpg" alt="ইব্রাহিম সেলফি 2" oncontextmenu="return false;" ondragstart="return false;">
+            <div class="card-label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="1.3"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                ছবি ২: ইব্রাহিমের সেলফি
+            </div>
+        </div>
+    </div>
+
+    <!-- যোগাযোগ ও ফেসবুক -->
+    <div class="contact-row">
+        <div class="phone-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f3b5c" stroke-width="1.5">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <strong>মোবাইল (অভিযুক্ত):</strong> <span style="font-family: monospace; font-size: 16px;">01337163624</span>
+        </div>
+        <a href="https://www.facebook.com/share/18T8r96MF2/" target="_blank" rel="noopener noreferrer" class="fb-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            ফেসবুক প্রোফাইল
+        </a>
+    </div>
+
+    <!-- ভিডিও প্রমাণ (সঠিক সময়সীমা সহ) -->
+    <div class="section-title">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="4" width="20" height="16" rx="2" stroke="#1f2a44" stroke-width="1.3"/>
+            <polygon points="10,8 16,12 10,16" fill="#b91c1c" stroke="#b91c1c"/>
+        </svg>
+        <span>ভিডিও প্রমাণ (দা সন্ত্রাসের চারটি ঘটনা)</span>
+    </div>
+    <div class="video-grid">
+        <!-- শর্টস - আজকের: ভাই ও ভাইয়ের পরিবারকে হত্যার কসম -->
+        <div class="video-card short-card">
+            <div class="video-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b91c1c"><rect x="2" y="6" width="20" height="12" rx="1"/><path d="M10 10L15 12L10 14V10Z" fill="#b91c1c"/></svg>
+                আজকের ঘটনা: ভাই ও ভাইয়ের পরিবারকে হত্যার কসম
+                <span class="time-badge">আজ (শর্টস)</span>
+            </div>
+            <iframe src="https://www.youtube.com/embed/L8DI6wzDAXE?rel=0&modestbranding=1&showinfo=0&controls=1&iv_load_policy=3" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-presentation" allowfullscreen></iframe>
+        </div>
+        <!-- দুপুরের ঘটনা (৩ মাস আগে + বোনকে মেরেছে) -->
+        <div class="video-card">
+            <div class="video-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b91c1c"><rect x="2" y="6" width="20" height="12" rx="1"/><path d="M10 10L15 12L10 14V10Z" fill="#b91c1c"/></svg>
+                দুপুরের ঘটনা: দা সন্ত্রাস + বোনকে মারধর
+                <span class="time-badge">৩ মাস আগে</span>
+            </div>
+            <iframe src="https://www.youtube.com/embed/jLZ7NbHT2II?rel=0&modestbranding=1&showinfo=0&controls=1&iv_load_policy=3" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-presentation" allowfullscreen></iframe>
+        </div>
+        <!-- সকালের ঘটনা (৩ মাস আগে) -->
+        <div class="video-card">
+            <div class="video-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b91c1c"><rect x="2" y="6" width="20" height="12" rx="1"/><path d="M10 10L15 12L10 14V10Z" fill="#b91c1c"/></svg>
+                সকালের ঘটনা: দা সন্ত্রাস
+                <span class="time-badge">৩ মাস আগে</span>
+            </div>
+            <iframe src="https://www.youtube.com/embed/omZdxSz8EfU?rel=0&modestbranding=1&showinfo=0&controls=1&iv_load_policy=3" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-presentation" allowfullscreen></iframe>
+        </div>
+        <!-- বাবাকে দা দিয়ে হামলার চেষ্টা (বেশ কিছুদিন আগে) -->
+        <div class="video-card">
+            <div class="video-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b91c1c"><rect x="2" y="6" width="20" height="12" rx="1"/><path d="M10 10L15 12L10 14V10Z" fill="#b91c1c"/></svg>
+                নিজের বাবাকে দা দিয়ে হামলার চেষ্টা
+                <span class="time-badge">বেশ কিছুদিন আগে</span>
+            </div>
+            <iframe src="https://www.youtube.com/embed/wwd4fdxhRDI?rel=0&modestbranding=1&showinfo=0&controls=1&iv_load_policy=3" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-presentation" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4b5563" style="display: inline; margin-right: 6px;"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        এই ওয়েবপেজটি আইনি কর্তৃপক্ষের কাছে প্রমাণ পেশ করার জন্য তৈরি। সকল ভিডিও এম্বেডে <strong>sandbox অ্যাট্রিবিউট</strong> ব্যবহার করা হয়েছে যা ইউটিউবে রিডাইরেক্ট প্রতিরোধ করে। <strong>rel=0 ও modestbranding=1</strong> থাকায় সাজেস্টেড কন্টেন্ট দেখা যায় না। 
+        <br><br>
+        <strong>নির্দেশনা:</strong> পিডিএফ বা স্ক্রিনশট সংরক্ষণ করে পুলিশ, ম্যাজিস্ট্রেট বা সাইবার ট্রাইব্যুনালে জমা দিন। ফোন: 01337163624 (অভিযুক্ত)।
+    </footer>
+</div>
+
+<script>
+    // ডান ক্লিক ও ড্র্যাগ ব্লক
+    document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('contextmenu', (e) => e.preventDefault());
+        img.addEventListener('dragstart', (e) => e.preventDefault());
+    });
+    // কীবোর্ড শর্টকাট ব্লক
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'F12' || (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 'i' || e.key === 'I'))) {
+            e.preventDefault();
+        }
+    });
+</script>
+
+</body>
+</html>
